@@ -1,19 +1,19 @@
-# Web ??
+# Web framework
 flask>=2.0.0
 flask-cors>=4.0.0
 flask-socketio>=5.0.0
-flask-sqlalchemy>=3.0.0
+flask-sqlalchemy>=2.5.0
 flask-migrate>=4.0.0
 
-# ???
-sqlalchemy>=2.0.0
+# Database
+sqlalchemy>=1.4.0
 alembic>=1.12.0
 
-# Appium ???
+# Appium
 appium-python-client>=3.0.0
 
-# XML ???appium_connector?
+# XML parser
 lxml>=4.9.0
 
-# ???????networkMonitor?
+# Charts
 matplotlib>=3.7.0
