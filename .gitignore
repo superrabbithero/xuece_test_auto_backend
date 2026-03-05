@@ -1,0 +1,11 @@
+# 在 .gitignore 中添加以下行
+venv/
+*/venv/
+*/.venv/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+*.so
+.DS_Store

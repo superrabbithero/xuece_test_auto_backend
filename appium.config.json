@@ -1,0 +1,9 @@
+{
+  "server": {
+    "driver": {
+      "xcuitest": {
+        "webkit-debug-proxy-port": 4723
+      }
+    }
+  }
+}
