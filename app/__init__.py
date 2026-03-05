@@ -31,7 +31,3 @@ def create_app():
     app.register_blueprint(routes.bp)
 
     return app
-
-
-# 供 gunicorn 使用: gunicorn app:app
-app = create_app()
