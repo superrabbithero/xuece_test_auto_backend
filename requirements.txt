@@ -1,19 +1,19 @@
 # Web framework
-flask>=2.0.0
-flask-cors>=4.0.0
-flask-socketio>=5.0.0
-flask-sqlalchemy>=2.5.0
-flask-migrate>=4.0.0
+Flask==3.1.2
+flask-cors==6.0.1
+Flask-SocketIO==5.5.1
+Flask-SQLAlchemy==3.1.1
+Flask-Migrate==4.1.0
 
 # Database
-sqlalchemy>=1.4.0
-alembic>=1.12.0
+SQLAlchemy==2.0.44
+alembic==1.17.2
 
 # Appium
-appium-python-client>=3.0.0
+Appium-Python-Client==5.2.4
 
 # XML parser
-lxml>=4.9.0
+lxml==6.0.2
 
-# Charts
+# Charts (networkMonitor) - ??????? pip install matplotlib
 matplotlib>=3.7.0
