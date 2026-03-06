@@ -5,7 +5,13 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import os
 
-socketio = SocketIO(cors_allowed_origins="*",async_mode='threading')
+socketio = SocketIO(
+    cors_allowed_origins="*",
+    async_mode='threading',
+    path='/socket.io',
+    logger=False,
+    engineio_logger=False
+)
 db = SQLAlchemy()
 migrate = Migrate()
 

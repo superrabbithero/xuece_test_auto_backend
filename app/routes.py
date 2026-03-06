@@ -20,6 +20,9 @@ def get_devices():
                 if len(parts) >= 2:
                     devices.append({'udid': parts[0], 'status': parts[1]})
         return jsonify(devices)
+    except FileNotFoundError:
+        # 服务器未安装 adb 或 adb 不在 PATH 中
+        return jsonify([])
     except subprocess.CalledProcessError as e:
         return jsonify({'error': str(e)}), 500
 

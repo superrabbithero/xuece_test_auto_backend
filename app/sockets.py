@@ -113,8 +113,13 @@ def handle_scrcpy_connect():
     global scpy_ctx, client_sid
     print('scrcpy_connect from client', request.sid)
 
+    if scpy_ctx is not None and client_sid != request.sid:
+        print('scrcpy already in use by another client, rejecting')
+        emit('scrcpy_busy', {'message': '实时画面正在被其他客户端使用'})
+        return
+
     if scpy_ctx is not None:
-        print('scrcpy already running, stopping old instance first')
+        print('scrcpy already running (same client), stopping old instance first')
         scpy_ctx.scrcpy_stop()
         scpy_ctx = None
         client_sid = None
